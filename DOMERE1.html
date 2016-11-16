@@ -8,8 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script 
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"> 
   <script>
 $(document).ready(function(){
     $("#flip").click(function(){
@@ -17,9 +16,8 @@ $(document).ready(function(){
     });
 });
 </script>
-
   <style>
-  
+
 	.carousel-inner > .item > img,
 	.carousel-inner > .item > a > img {
       width: 70%;
@@ -28,13 +26,15 @@ $(document).ready(function(){
 	.jumbotron { 
     background-color: #00FFFF; 
     color: black;
+	height: 350px;
+	padding-top: 80px;
 }
 	#flip {
 	align: center;
-    padding: 5px;
+    padding: 6px;
     text-align: center;
     background-color: #87CEEB;
-    border: solid 2px #87CEEB;
+    border: solid 2px #F8F8FF;
     width: 400px;
     color: black;
 	margin: auto;
@@ -44,16 +44,20 @@ $(document).ready(function(){
     padding: 80px;
     display: none;
     text-align: center;
+	color: black;
     background-color: #87CEEB;
-    border: solid 2px #87CEEB;
+    border: solid 2px #F8F8FF;
     width: 460;
     }
 	body {
       position: relative;
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
   }
-  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
-  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #C71585;}
-  #section3 {padding-top:50px;height:500px;color: #A0522D; background-color: #800000;}
+  #section1 {padding-top:50px;height:700px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:30px;height:400px;color: #fff; background-color: #C71585;}
+  #section3 {padding-top:50px;height:700px;color: #A0522D; background-color: #800000;}
   #section41 {padding-top:50px;height:500px;color: #fff; background-color: #BA55D3;}
   
   navbar {
@@ -71,7 +75,29 @@ $(document).ready(function(){
   .down{
 	width : 350px;
 	height : 200px;
+	text-align: justify;
 	
+  }
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  footer {
+      background-color: black;
+      color: white;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
   }
 
   </style>
@@ -87,7 +113,7 @@ $(document).ready(function(){
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">LOGO</a>
+      <a class="navbar-brand" href="#"><img src="fb15f07243e81de329a17151300b5e99.png"height="30px"></a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
@@ -101,16 +127,15 @@ $(document).ready(function(){
     </div>
   </div>
 </nav>
-  <br><br>
   <div class="jumbotron text-center">
-    <h1 id="#home">DOMERE</h1> 
+    <h1>DOMERE</h1> 
     <p>Dog Medical Care and Rehabilitation</p> 
 	<form class="form-inline">
     <input type="email" class="form-control" size="50" placeholder="Services">
     <button type="button" class="btn btn-danger">Search</button>
   </form>
   </div>
-  <h2 align="center">WHO ARE WE?</h2>
+    <h2 align="center">WHO ARE WE?</h2>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     
     <ol class="carousel-indicators">
@@ -152,8 +177,8 @@ $(document).ready(function(){
     </a>
   </div>
 </div>
-<div id="flip" align="center">Good News for You Dog's Lover !!!</div>
-<div id="panel">Hallo para dog's lover, disini kami menghadirkan sesuatu yang baru untuk kalian. Sesuatu yang sangat berbeda dan pasti akan sangat membantu kalian. <br> Yup, kami membuka dog medical and care, dimana kami akan membantu anda merawat anjing-anjing lucu anda. <br> Ada beberapa pilihan disini, yang pertama medical, yaitu untuk mengobati anjing yang sedanng sakit, kami akan datang jika anda memesan jasa kami, tanpa harus repot-repot membawa anjing yang sedang sakit. <br> Yang kedua kita ada care, yaitu layanan untuk membantu menjaga anjing anda saat ditinggal. Anda bisa memilih dijaga di tempat anda atau kami yang mengambilnya dan membawa ke tempat kami. <br> </div>
+<div id="flip" align="center"><h4>Good News for You Dog's Lover !!!</h4></div>
+<div id="panel">Hallo para dog's lover, disini kami menghadirkan sesuatu yang baru untuk kalian. Sesuatu yang sangat berbeda dan pasti akan sangat membantu kalian. <br> Yup, kami membuka dog medical and care, dimana kami akan membantu anda merawat anjing-anjing lucu anda. <br> Ada beberapa pilihan, yang pertama medical, yaitu untuk mengobati anjing yang sedang sakit, kami akan datang jika anda memesan jasa kami, tanpa harus repot-repot membawa anjing yang sedang sakit. <br> Yang kedua kita ada care, yaitu layanan untuk membantu menjaga anjing anda saat ditinggal. Anda bisa memilih dijaga di tempat anda atau kami yang mengambilnya dan membawa ke tempat kami. <br> </div>
 
 <div id="section1" class="container-fluid">
   <div class="container">         
@@ -207,45 +232,39 @@ $(document).ready(function(){
   <br>
   <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off"></span>
-      <h4>Medical</h4>
-      <p>klik disini untuk fitur medical</p>
+      <span class="glyphicon glyphicon-plus"></span>
+      <h4>MEDICAL</h4>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-heart"></span>
-      <h4>Care</h4>
-      <p>Klik disini untuk fitur care</p>
+      <h4>CARE</h4>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-lock"></span>
-      <h4>Rehabilitation</h4>
-      <p>klik disini untuk fitur rehabilitation</p>
+      <h4>REHABILITATION</h4>
     </div>
     </div>
     <br><br>
-	<div class="row">
+  <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off"></span>
-      <h4>Medical</h4>
-      <p>klik disini untuk fitur medical</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart"></span>
-      <h4>Care</h4>
-      <p>Klik disini untuk fitur care</p>
+      <span class="glyphicon glyphicon-leaf"></span>
+      <h4>BEST SERVICE</h4>
     </div>
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock"></span>
-      <h4>Rehabilitation</h4>
-      <p>klik disini untuk fitur rehabilitation</p>
+      <span class="glyphicon glyphicon-certificate"></span>
+      <h4>CERTIFIED</h4>
     </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench"></span>
+      <h4>HARD WORK</h4>
     </div>
-    <br><br>
-  
+  </div>
+</div>
+</div>
 <div id="section3" class="container-fluid">
   <div class="text-center">
     <h2 style="color: white;">Pricing</h2>
-    <h4 style="color: white;">Choose a payment plan that works for you</h4>
+    <h4 style="color: white;">Choose the best one that works for you</h4>
   </div>
   <div class="row slideanim">
     <div class="col-sm-4 col-xs-12">
@@ -253,15 +272,15 @@ $(document).ready(function(){
         <div class="panel-heading">
           <h1>Basic</h1>
         </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
+        <div class="panel-body" text-align="justify">
+          <p><strong>3</strong>  Medical Check Up</p>
+          <p><strong>2</strong> Massage</p>
+          <p><strong>2</strong> Fur Caring</p>
+          <p><strong>FREE: </strong> a set of clothes and	
+		  <br>sudden surgery</p>
         </div>
         <div class="panel-footer">
-          <h3>$19</h3>
+          <h3>Rp. 700.000,00</h3>
           <h4>per month</h4>
           <button class="btn btn-lg">Sign Up</button>
         </div>
@@ -273,33 +292,33 @@ $(document).ready(function(){
           <h1>Pro</h1>
         </div>
         <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
+          <p><strong>5</strong>  Medical Check Up</p>
+          <p><strong>3</strong>  Massage</p>
+          <p><strong>2</strong>  Fur Caring and Nail Care</p>
+          <p><strong>FREE:</strong> a set of dog toiletries and dog food
+		  <br>sudden surgery</p>
         </div>
         <div class="panel-footer">
-          <h3>$29</h3>
+          <h3>Rp.1.500.000,00</h3>
           <h4>per month</h4>
           <button class="btn btn-lg">Sign Up</button>
         </div>
       </div>
     </div>
-    <div class="col-sm-4 col-xs-12">
+	<div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>Premium</h1>
+          <h1>Pro</h1>
         </div>
         <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
+          <p><strong>5</strong>  Medical Check Up</p>
+          <p><strong>4</strong>  Massage</p>
+          <p><strong>4</strong>  Fur Caring and Nail Care</p>
+          <p><strong>FREE:</strong> a couple clothes, garden picnic every Sunday and<br>
+		  sudden surgery</p>
         </div>
         <div class="panel-footer">
-          <h3>$49</h3>
+          <h3>Rp.2.500.000,00</h3>
           <h4>per month</h4>
           <button class="btn btn-lg">Sign Up</button>
         </div>
@@ -336,6 +355,12 @@ $(document).ready(function(){
   </div>
 </div>
 </div>
+<footer class="text-center">
+  <a class="up-arrow" href="#" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p><strong>Made By Domere Team</strong></p>
+</footer>
 
 </body>
 </html>
